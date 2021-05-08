@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url(../fonts/JF-Flat-regular.eot);
+    src: url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+         url(../fonts/JF-Flat-regular.woff) format('woff'),
+         url(../fonts/JF-Flat-regular.ttf) format('truetype');
+    font-style: normal;
+}
+
+body {
+    font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.row {
+    display: block;
+}
+.custom-navbar {
+    font-size: 16px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    background-color: #E4DDE4;
+    border-bottom: 3px solid #dbddd8;
+}
+.custom-navbar .navbar-header img {
+    padding-right: 10px;
+    margin-top: 8px;
+}
+#nav-menu {
+    padding-left: 60px;
+    margin-right: 20px;
+}
+
+#nav-menu ul li{
+    font-size: 24px;
+    margin-left: 18px;
+}
+#nav-menu ul li:last-child {
+    margin-right: 10rem;
+}
+#nav-menu ul li a {
+    color: #A83859;
+    line-height: 40px;
+}
+#nav-menu ul li a.active {
+    color: #471874;
+    border-bottom: 1px solid #471874;
+}
+#nav-menu ul li a:hover,
+#nav-menu ul li a:focus,
+#nav-menu ul li a:active
+{
+    color:#471874;
+    border: 1px solid #471874;
+}
+#nav-menu ul li.sign-in {
+    border: 2px solid #471874;
+}
+.title h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #d4a1d4;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px 20px;
+    line-height: 50px;
+    border: 2px solid #fcf8f8;
+    background-color: #fffbfb;
+}
