@@ -4,27 +4,36 @@
     src: url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
          url(../fonts/JF-Flat-regular.woff) format('woff'),
          url(../fonts/JF-Flat-regular.ttf) format('truetype');
-    font-style: normal;
 }
 
 body {
     font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
 }
-
-.row {
-    display: block;
+.custom-con {
+    background-image: url(../img/logo/th.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 275vh;
+}
+.overlay {
+    background: rgba(22, 22, 22, 0.5);
+    height: 70vh;
+    width: 100%;
+}
+.navbar {
+    padding-top: 0;
+    padding-bottom: 2rem;
 }
 .custom-navbar {
     font-size: 16px;
-    padding-top: 17px;
     padding-bottom: 15px;
-    background-color: #E4DDE4;
-    border-bottom: 3px solid #dbddd8;
 }
 .custom-navbar .navbar-header img {
     padding-right: 10px;
-    margin-top: 8px;
+    width: 10rem;
+    height: 5rem;
+    transform: translateY(-50px) !important;
 }
 #nav-menu {
     padding-left: 60px;
@@ -39,31 +48,134 @@ body {
     margin-right: 10rem;
 }
 #nav-menu ul li a {
-    color: #A83859;
+    color: rgb(20, 20, 20);
     line-height: 40px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    text-decoration: none;
 }
-#nav-menu ul li a.active {
-    color: #471874;
-    border-bottom: 1px solid #471874;
+#nav-menu ul li.active {
+    color: #f5f0f0;
+    border-bottom: 1px solid #f5f0f0;
 }
-#nav-menu ul li a:hover,
-#nav-menu ul li a:focus,
-#nav-menu ul li a:active
+
+#nav-menu ul li a:hover
 {
-    color:#471874;
-    border: 1px solid #471874;
+    color: #f5f0f0;
+    border: 1px solid #f5f0f0;
 }
 #nav-menu ul li.sign-in {
-    border: 2px solid #471874;
+    border: 2px solid #f5f0f0;
+    color: #f5f0f0;
 }
+
 .title h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #d4a1d4;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 20px 20px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;   
     line-height: 50px;
-    border: 2px solid #fcf8f8;
-    background-color: #fffbfb;
+}
+
+.introduction {
+    margin-bottom: 6rem;
+}
+
+.introduction .title-of-introduction h2 {
+    margin: 20px 60px;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(41, 41, 41);
+    color: #f5f0f0;
+}
+.introduction .body-of-introduction p{
+    max-height: 80px;
+    font-size: 22px;
+    line-height: 45px;
+    font-weight: 300px;
+    margin: 15px 80px;
+    color: #fcfafa;
+}
+.services {
+    margin-bottom: 30px;
+}
+#services .overlay {
+    height: 85vh;
+}
+.services .title-of-services {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.services .list-of-services ul li.title-services {
+    font-size: 28px;
+    font-weight: 300px;
+    color: #f5f0f0;
+    padding: 10px 10px;
+}
+.services .list-of-services ul li.body-services {
+    font-size: 18px;
+    font-weight: 100px;
+    color: #f5f0f0;
+    padding: 15px 15px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.services .list-of-services ul {
+    border: 2px solid black;
+    border-radius: 2px;
+}
+.Sightseeing-tours .overlay {
+    height: 110vh;
+}
+.Sightseeing-tours h1 {
+    padding-bottom: 25px;
+}
+.Sightseeing-tours .card-tours img {
+    padding: 5px 5px;
+}
+.Sightseeing-tours .card-tours {
+    border: 2px solid rgb(22, 22, 22);
+    border-radius: 5px;
+}
+.Sightseeing-tours .body-tours {
+    line-height: 10px;
+    font-size: 18px;
+    padding-right: 30px;
+}
+.Sightseeing-tours .title-tours {
+    font-size: 24px;
+    font-weight: 200px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.Sightseeing-tours .text-tours {
+    font-size: 20px;
+    font-weight: 200px;
+    padding: 10px 10px;
+}
+footer {
+    background-color: #171717;
+}
+.contact-us h3 {
+    margin: 30px 15px;
+    font-weight: 200px;
+    color: #85ECFF;
+}
+#contact-us h3::before {
+    content: "";
+    position: absolute;
+    right: 28px;
+    bottom: 115px;
+    width: 100px;
+    height: 2px;
+    background-color: #5c5c5c;
+}
+.contact-us .contact {
+    font-size: 18px;
+    font-weight: 100px;
+    color: #ACACAC;
+    margin-right: 15px;
+}
+.contact-us .contact ul li {
+    margin-bottom: 15px;
 }
