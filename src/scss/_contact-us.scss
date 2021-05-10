@@ -1,0 +1,44 @@
+.contact-us .contact {
+    font-size: 18px;
+    font-weight: 100px;
+    color: #ACACAC;
+    margin-right: 5px;
+
+    li {
+        margin-bottom: 35px;
+        font-size: 20px;
+        margin-right: 25px;
+
+        i {
+            width: 35px;
+            height: 35px;
+            background-color: #282828;
+            line-height: 35px;
+            margin-left: 20px;
+            text-align: center;
+            border-radius: 2px;
+            color: #acacac;
+        }
+    }
+}
+.contact-us .social-media{
+    margin-right: 15px;
+
+    li {
+        margin-right: 25px;
+
+        a{
+            font-size: 35px;
+            width: 60px;
+            height: 60px;
+            border-radius: 2px;
+            color: #acacac;
+            line-height: 35px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                color: #60e7ff;
+            }
+        }
+    }
+}

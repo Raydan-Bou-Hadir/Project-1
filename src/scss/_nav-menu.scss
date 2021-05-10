@@ -1,0 +1,36 @@
+#nav-menu {
+    padding-left: 60px;
+    margin-right: 20px;
+
+    .navbar-nav li {
+        font-size: 24px;
+        margin-left: 18px;
+
+        &:last-child {
+            margin-right: 10rem;
+        }
+
+        .active {
+            color: $brand-white;
+            border-bottom: 1px solid $brand-white;
+        }
+
+        .sign-in {
+            border: 2px solid $brand-white;
+            color: $brand-white;
+        }
+
+        a {
+            color: rgb(20, 20, 20);
+            line-height: 30px;
+            -webkit-transition: all 0.5s ease;
+            transition: all 1s ease;
+            text-decoration: none;
+
+            &:hover {
+                color: $brand-white;
+                border: 1px solid $brand-white;
+            }
+        } 
+    }
+}
