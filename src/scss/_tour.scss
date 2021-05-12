@@ -1,0 +1,8 @@
+.tour .body-tour {
+    @include body-p;
+    margin: 10px 10px;
+}
+
+.title-tourist {
+    @include title-h2;
+}

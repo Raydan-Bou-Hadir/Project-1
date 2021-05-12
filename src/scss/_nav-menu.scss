@@ -1,5 +1,5 @@
-#nav-menu {
-    padding-left: 60px;
+.custom-nav-menu {
+    padding-left: 0px;
     margin-right: 20px;
 
     .navbar-nav li {
@@ -7,17 +7,13 @@
         margin-left: 18px;
 
         &:last-child {
-            margin-right: 10rem;
+            margin-right: 7rem;
+            border: 2px solid $brand-white;
+            color: $brand-white;
         }
-
         .active {
             color: $brand-white;
             border-bottom: 1px solid $brand-white;
-        }
-
-        .sign-in {
-            border: 2px solid $brand-white;
-            color: $brand-white;
         }
 
         a {
@@ -27,9 +23,10 @@
             transition: all 1s ease;
             text-decoration: none;
 
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
                 color: $brand-white;
-                border: 1px solid $brand-white;
             }
         } 
     }

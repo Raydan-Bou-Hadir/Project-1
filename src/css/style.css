@@ -31,6 +31,13 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;   
     line-height: 50px;
+    cursor: default;
+}
+.custom-btn button.btn {
+    display: none;
+}
+.title a {
+    text-decoration: none;
 }
 .navbar {
     padding-top: 0;
@@ -44,6 +51,7 @@ body {
     width: 12rem;
     height: 6rem;
     transform: translateY(-60px) !important;
+    cursor: default;
 }
 .introduction {
     margin-bottom: 30px;
@@ -107,23 +115,127 @@ footer {
     text-align: center;
     margin-bottom: 0;
 }
-.tour .body-p {
-    color: #f5f0f0;
-    font-size: 20px;
-    margin: 10px 10px;
+.custom-page2 {
+    background-image: url(../img/flight-FLY0916.jpg);
+    background-position: center center;
+    background-size: cover;
 }
+
 .carousel .carousel-inner {
     max-width: 70%;
     max-height: 70%;
     margin: auto;
-    border: 1px solid #000;
+    border: 2px solid #000;
 }
 .carousel a.carousel-control-prev,
 .carousel a.carousel-control-next {
     max-width: 4rem;
     max-height: 4rem;
     border: 2px solid #000;
-    border-radius: 3px;
-    position: absolute;
-    top: 14rem;
+    border-radius: 50%;
+    margin: auto;
+}
+#more {
+    display: none;
+}
+
+/*******************************************
+********************************************
+MEDIA QUERY
+********************************************
+*******************************************/
+
+@media (max-width: 1199px){
+    .custom-nav-menu {
+        padding-left: 0px;
+        margin-right: 0px;
+    }
+
+    .custom-nav-menu .navbar-nav li:last-child {
+        margin-right: 3rem;
+    }
+
+    #services .list-of-services .custom-services .body-services {
+        font-size: 17px;
+    }
+    .tour .body-tour p {
+        width: 99%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .custom-btn button.btn {
+        color:burlywood;
+        border: 1px solid #000;
+        border-radius: 2px;
+        background-color: transparent;
+        padding: 5px 10px 4px;
+        font-size: 24px;
+        display: inline-block;
+        transition: all 1s ease;
+        transform: translateX(-5rem);
+        margin-top: -2rem;
+    }
+    .custom-btn button.btn:hover,
+    .custom-btn button.btn:active,
+    .custom-btn button.btn:hover:focus {
+        color: #fff;
+    }
+
+    .custom-navbar .navbar-header img {
+        padding-right: 0;
+    }
+    .custom-nav-menu {
+        background: linear-gradient(to right, rgba(93, 96, 94, 0.8) 0%, rgba(18, 60, 194, 0.8) 100%)
+    }
+    .custom-nav-menu .navbar-nav li {
+        padding-right: 20px;
+        text-align: center;
+    }
+    .custom-nav-menu .navbar-nav li:last-child {
+        margin-right: 0;
+    }
+    .Sightseeing-tours .card-tours {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .title-of-h2 {
+        margin: 5px 0;
+    }
+    .introduction .body-of-introduction p {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+@media (max-width: 675px) {
+    .custom-btn button.btn {
+        margin-left: 3rem;
+    }
+}
+@media (max-width: 575px) {
+    .custom-btn button.btn {
+        margin-left: 5rem;
+    }
+    .title-of-h2 {
+        padding-bottom: 10px;
+    }
+    .introduction .body-of-introduction p {
+        text-align: justify;
+        font-size: 18px;
+    }
+    .contact-us .contact-all {
+        margin-right: 15px;
+    }
+    .contact-us .social-media {
+        margin-right: 0px;
+    }
+    .contact-us .contact {
+        margin-right: 0;
+    }
+    
+    .contact-us .location {
+        margin-right: 15px;
+    }
 }
