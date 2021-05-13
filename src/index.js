@@ -12,33 +12,19 @@ library.add(fas, far, fab);
 dom.i2svg();
 
 
-$(window).on('scroll', function(){
-    if($(this).scrollTop()>=500){
-       $("#navBar").addClass("noTransparrent");
-     }
-     else{
-       $("#navBar").removeClass("noTransparrent");
-    }
-});
+var password = document.getElementById("password"),
+confirm_password = document.getElementById("confirm_password");
 
-$(document).ready(function(event){
-    $("a.scroll").on('click', function(event) {
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("كلمة المرور خاطئة");
+  }
+}
 
-    var hash = this.hash;
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
 
-    $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){});
 
-  });
-
-  $('.timer').countTo();
-});
-
-$(document).ready(function () {
-
-  $('#copyright').text("جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear());
-  
-
-});
 
 
 

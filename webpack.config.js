@@ -92,6 +92,11 @@ module.exports = {
             filename: "Tourist-tour.html",
             template: "./src/Tourist-tour.html",
         }),
+        new HtmlWebpackPlugin({ 
+            filename: "create-acc.html",
+            template: "./src/create-acc.html",
+        }),
+
 
         new MiniCssExtractPlugin({filename: "css/style.css"}),
 
