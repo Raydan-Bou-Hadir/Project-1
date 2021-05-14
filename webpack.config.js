@@ -80,6 +80,13 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: require.resolve('jquery'),
+                loader: 'expose-loader',
+                options: {
+                    exposes: ['$', 'jQuery'],
+                }
+            },
         ]
     },
 
@@ -95,6 +102,10 @@ module.exports = {
         new HtmlWebpackPlugin({ 
             filename: "create-acc.html",
             template: "./src/create-acc.html",
+        }),
+        new HtmlWebpackPlugin({ 
+            filename: "log-in.html",
+            template: "./src/log-in.html",
         }),
 
 

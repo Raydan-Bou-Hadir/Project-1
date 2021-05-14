@@ -11,6 +11,19 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fas, far, fab);
 dom.i2svg();
 
+$(document).on('ready', function(event){
+  $("a.scroll").on('click', function(event) {
+
+  var hash = this.hash;
+
+  $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){});
+
+  });
+});
+
+$(function() {
+  $('#copyright').text("جميع الحقوق محفوظة سنة " + new Date().getFullYear());
+});
 
 var password = document.getElementById("password"),
 confirm_password = document.getElementById("confirm_password");
@@ -23,7 +36,6 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
-
 
 
 
