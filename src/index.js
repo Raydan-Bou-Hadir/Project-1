@@ -11,7 +11,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fas, far, fab);
 dom.i2svg();
 
-$(document).on('ready', function(event){
+$(document).ready(function(event){
   $("a.scroll").on('click', function(event) {
 
   var hash = this.hash;
@@ -21,22 +21,40 @@ $(document).on('ready', function(event){
   });
 });
 
-$(function() {
-  $('#copyright').text("جميع الحقوق محفوظة سنة " + new Date().getFullYear());
+$(document).ready(function () {
+  $("#myBtn").on("click", function(){
+      read();
+  });
 });
 
-var password = document.getElementById("password"),
-confirm_password = document.getElementById("confirm_password");
+function read() {
+  var dots = document.getElementById("dots");
+  var moretext = document.getElementById("more");
+  var btntext = document.getElementById("myBtn");
 
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("كلمة المرور خاطئة");
+  if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btntext.innerHTML = "عرض المزيد";
+      moretext.style.display = "none";
+  } else {
+     dots.style.display = "none";
+      btntext.innerHTML = "عرض عناصر أقل";
+      moretext.style.display = "inline";
   }
 }
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+$(function () {
+  $("#bsubmit").click(function () {
+      var password = $("#cpassword").val();
+      var confirmPassword = $("confirm_password").val();
+      if (password != confirmPassword) {
+          alert("خطأ في كلمة المرور.");
+          return false;
+      }
+      return true;
+  });
+});
 
-
-
-
+$(function () {
+  $("#body-acc").validate();
+});

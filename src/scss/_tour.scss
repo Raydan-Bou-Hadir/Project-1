@@ -1,6 +1,19 @@
 .tour .body-tour {
     @include body-p;
     margin: 10px 10px;
+
+    button {
+        background-color: transparent;
+        border: 0;
+        color: #60e7ff;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: 0;
+            color: $brand-colo-2;
+        }
+    }
 }
 
 .title-tourist {

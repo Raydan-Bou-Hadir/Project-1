@@ -17,3 +17,12 @@
     width: 175px;
     height: 50px;
 }
+
+.custom-nav-menu .enable {
+    color: $navbar-light-color;
+
+    &:hover,
+    &:focus{
+        color: $navbar-light-hover-color;
+    }
+}
