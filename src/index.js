@@ -21,9 +21,13 @@ $(document).ready(function(event){
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   $("#myBtn").on("click", function(){
       read();
+  });
+
+  $(function () {
+    $("#body-acc").validate();
   });
 });
 
@@ -55,6 +59,3 @@ $(function () {
   });
 });
 
-$(function () {
-  $("#body-acc").validate();
-});

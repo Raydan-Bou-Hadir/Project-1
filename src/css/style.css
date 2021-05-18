@@ -145,14 +145,15 @@ footer {
     height: auto;
     margin: auto;
 }
-
+#body-acc {
+    margin: auto;
+}
 #body-acc .form-group {
-    margin: 20px 10px;
-
+    margin: 40px 0px;
 }
 #body-acc .form-group input{
     font-size: 18px;
-    width: 40%;
+    width: 100%;
     text-align: center;
     background-color: transparent;
     border: transparent;
@@ -161,10 +162,10 @@ footer {
     margin-bottom: 30px;
 }
 
-::placeholder {
+#body-acc .form-group input::placeholder {
     color: #f5f0f0;
 }
-#body-acc .form-group input .error {
+#body-acc .form-group input.error {
     color: red;
 }
 
@@ -184,6 +185,10 @@ footer {
 #q-sign-in a {
     color: #dddcdc;
     text-decoration: none;
+}
+#q-sign-in a:hover {
+    color: #354F82;
+    transition: all 0.5s ease;
 }
 /*******************************************
 ********************************************
