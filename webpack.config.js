@@ -100,6 +100,10 @@ module.exports = {
             template: "./src/Tourist-tour.html",
         }),
         new HtmlWebpackPlugin({ 
+            filename: "Tourist-tour-2.html",
+            template: "./src/Tourist-tour-2.html",
+        }),
+        new HtmlWebpackPlugin({ 
             filename: "create-acc.html",
             template: "./src/create-acc.html",
         }),

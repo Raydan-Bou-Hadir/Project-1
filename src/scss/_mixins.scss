@@ -1,16 +1,113 @@
-@mixin title-h2($mtb: 22px, $pb: 25px, $c1: #ffffff) {
-    font-style: italic;
+@mixin tour($Ctour-1,$Ctour-2,$Ctour-3,$Ctour-4,$Ctour-5,$Ctour-6) {
+    .custom-page2 {
+        background-color: $Ctour-1;
+    }
+    .title a h1 {
+        color: $Ctour-1;
+    }
+    .background-header {
+        background-color: $Ctour-2;
+    }
+    .overlay-tour {
+        background: $Ctour-3;
+    }
+    .custom-nav-menu .navbar-nav li{
+
+        &:last-child {
+            background-color: $Ctour-4;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $Ctour-2;
+            }
+        }
+        a {
+            color: $Ctour-1;
+
+
+            &:active,
+            &:focus,
+            &:hover{
+            color: $Ctour-5;
+            
+            }
+
+
+        }
+    }
+    .title-tourist {
+        color: $Ctour-1;
+    }
+    .tour .body-tour {
+        color: $Ctour-1;
+    
+        button{
+            color: $Ctour-1;
+            background-color: $Ctour-4;
+            border: 1px solid $Ctour-1;
+            border-radius: 2px;
+    
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $Ctour-2;
+            }
+        }
+    }
+    .carousel a.carousel-control-prev,
+    .carousel a.carousel-control-next {  
+        &:focus,
+        &:hover,
+        &:active{
+            color: $Ctour-1;
+        }
+    }
+    #footer-tour {
+        background-color: $Ctour-2 !important;
+    
+        #copyright-tour {
+            background-color: $Ctour-6;
+        }
+    }
+    
+    #contact-us .contact-all h3,
+    #contact-us .location h3 {
+        color: $Ctour-1;
+    }
+    .contact-us {
+
+        .contact {
+            color: $Ctour-1;
+        }
+    
+        .social-media {
+            li a{
+                &:active,
+                &:focus,
+                &:hover{
+                    color: $Ctour-1;
+                }
+            }
+        }
+    }
+    #copyright-tour p {
+        color: $Ctour-1;
+    }
+}
+@mixin title-h2($mtb: 22px, $pb: 25px) {
+    font-style: oblique;
     margin-bottom: $mtb;
     margin-top: $mtb;
     padding-bottom: $pb;
-    color: $c1;
     text-align: center;
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight:bolder;
 }
 
-@mixin body-p ($f1: 20px, $c2: #e5e5e5) {
-    color: $c2;
+@mixin body-p ($f1: 20px,) {
     font-size: $f1;
 }
+
+
 

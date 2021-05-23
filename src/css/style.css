@@ -27,11 +27,10 @@ body {
     font-size: 3rem;
     font-style: italic;
     font-weight: bold;
-    color: white;
+    color: #f5f0f0;
     padding-top: 15px;
     padding-bottom: 15px;   
     line-height: 50px;
-    cursor: default;
 }
 .custom-btn button.btn {
     display: none;
@@ -51,7 +50,6 @@ body {
     width: 12rem;
     height: 6rem;
     transform: translateY(-60px) !important;
-    cursor: default;
 }
 .introduction {
     margin-bottom: 30px;
@@ -71,7 +69,7 @@ body {
     line-height: 50px;
     font-weight: 400px;
     margin: 0px 80px;
-    color: #fcfafa;
+    color: #f5f0f0;
 }
 .services {
     margin-bottom: 30px;
@@ -106,7 +104,7 @@ footer {
 }
 
 .contact-us .copyright {
-    background-color: #111111;
+    background-color: #000;
     margin-top: 20px;
 }
 .contact-us .copyright p {
@@ -117,7 +115,6 @@ footer {
     margin-bottom: 0;
 }
 .custom-page2 {
-    background-image: url(../img/flight-FLY0916.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -135,6 +132,9 @@ footer {
     border: 2px solid #000;
     border-radius: 50%;
     margin: auto;
+}
+.tour .body-tour button {
+    padding: 3px 5px;
 }
 .overlay-of-acc {
     background: rgba(22, 22, 22, 0.2);
@@ -161,7 +161,12 @@ footer {
     padding-bottom: 5px;
     margin-bottom: 30px;
 }
-
+.overlay-tour {
+    height: auto;
+    width: 100%;
+    margin: 10px 20px;
+    padding: 20px 10px;
+}
 #body-acc .form-group input::placeholder {
     color: #f5f0f0;
 }
@@ -209,7 +214,7 @@ MEDIA QUERY
     #services .list-of-services .custom-services .body-services {
         font-size: 17px;
     }
-    .tour .body-tour p {
+    .tour .body-tour button p {
         width: 99%;
     }
 }
@@ -254,6 +259,11 @@ MEDIA QUERY
         width: 45rem;
     }
 }
+@media (max-width: 860px) and (min-width: 768px) {
+    .custom-btn button.btn {
+        margin-left: 3rem;
+    }
+}
 @media (max-width: 767px) {
     .title-of-h2 {
         margin: 5px 0;
@@ -268,13 +278,16 @@ MEDIA QUERY
     #q-sign-in {
         margin-left: 1rem;
     }
+    .overlay-of-acc {
+        width: auto;
+    }
 }
 @media (max-width: 675px) {
     .custom-btn button.btn {
         margin-left: 3rem;
     }
 }
-@media (max-width: 575px) {
+@media (min-width:320px) and (max-width: 575px) {
     .custom-btn button.btn {
         margin-left: 5rem;
     }
